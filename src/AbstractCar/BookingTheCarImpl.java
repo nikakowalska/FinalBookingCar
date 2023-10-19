@@ -1,0 +1,4 @@
+package AbstractCar;
+
+class BookingTheCarImpl {
+}
