@@ -1,7 +1,7 @@
 package AbstractCar;
 
 public abstract class BasicCar {
-
+//user id plus id uzytkownika ktory wypozyczyl konkretne auto, priorytet, do klas dodac equals and hashcode
     private String model;
     private int vin;
     private String colour;

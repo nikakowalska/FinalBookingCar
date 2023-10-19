@@ -3,7 +3,7 @@ package AbstractCar;
 import java.time.LocalDate;
 
 public class User {
-
+//wstawic id auta ktory wypozyczyl
     private int id;
     private String firstName;
     private String lastName;
