@@ -3,6 +3,22 @@ package AbstractCar;
 public abstract class BasicCar {
 //user id plus id uzytkownika ktory wypozyczyl konkretne auto, priorytet, do klas dodac equals and hashcode
     private String model;
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        final BasicCar basicCar = (BasicCar) o;
+
+        return vin == basicCar.vin;
+    }
+
+    @Override
+    public int hashCode() {
+        return vin;
+    }
+
     private int vin;
     private String colour;
     private int miles;

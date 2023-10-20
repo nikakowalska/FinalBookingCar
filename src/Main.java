@@ -6,21 +6,23 @@ public class Main {
     private static String suv;
 
     public static void main(String[] args) {
-        // basicCarList2();
-        Zmiana z1 = new Zmiana("Ala");
-        Zmiana z2 = new Zmiana("Ola");
-        Zmiana z3 = new Zmiana("Jaś");
-        Zmiana z4 = new Zmiana("Kuba");
-Test test = new Test("M");
+        basicCarList2();
+//        Zmiana z1 = new Zmiana("Ala");
+//        Zmiana z2 = new Zmiana("Ola");
+//        Zmiana z3 = new Zmiana("Jaś");
+//        Zmiana z4 = new Zmiana("Kuba");
+//Test test = new Test("M");
 
         Map<Integer, BasicCar> carsForRent = new HashMap<>();
 
-        Set<Zmiana> hashCode = new HashSet<>();
-        hashCode.add(z1);
-        hashCode.add(z2);
-        hashCode.add(z3);
-        hashCode.add(z4);
-        hashCode.forEach(s-> System.out.println(s.getName()));
+//        Set<Zmiana> hashCode = new HashSet<>();
+//        hashCode.add(z1);
+//        hashCode.add(z2);
+//        hashCode.add(z3);
+//        hashCode.add(z4);
+//        hashCode.forEach(s-> System.out.println(s.getName()));
+
+
     }
 
     private static void basicCarList() {
@@ -49,13 +51,12 @@ Test test = new Test("M");
         //  HashMap<Integer, BasicCar> carsForRent = dodajeAutoDoListy.getCarsForRent();// = przypisuje prawa do lewej
         pokazujeAuta.showAllCarsService(carsForRent);
         pokazujeUserow.showUsers(listOfUsers);
+
+        //carsForRent.forEach(cars -> {
+        //  System.out.println(cars.getVin());
+        // });
         //Map<User,BasicCar> userpluscar =
 
-        /*
-        Map<Integer, BasicCar> map = new HashMap<>();
-        dodajeAutoDoListy.addAllCars(map);
-        showAllCars.showAllCars(map);
-                 */
 
     }
 }
